@@ -6,7 +6,7 @@ def get_init(w0, params):
     Arguments:
         w0       :  vector of the initial conditions
     """
-    N_R0, AP_Eb0, AP_Et0, AP_El0, AP_S0, AP_St0, ITMb0, ITM0, M_R0, M_A0, CH0, N_A0, ND_A0, ACH0, ND_N0 = w0
+    N_R0, AP_Eb0, AP_Et0, AP_El0, AP_S0, AP_St0, ITMb0, ITM0, M_R0, M_A0, CH0, N_A0, ND_A0, ACH0, ND_N0, C_blood0, C0, TGF_beta0 = w0
 
     if params['case'] == 0:
         N_R0 = AP_Eb0 = AP_Et0 = AP_El0 = AP_S0 = AP_St0 = M_R0 = M_A0 = CH0 = N_A0 = ND_A0 = ACH0 = ND_N0 = 0
@@ -22,5 +22,5 @@ def get_init(w0, params):
         AP_Eb0 = AP_Et0 = AP_S0 = AP_St0 = 0
     elif params['case'] == 5:
         AP_S0 = AP_St0 = 0
-    w0 = [N_R0, AP_Eb0, AP_Et0, AP_El0, AP_S0, AP_St0, ITMb0, ITM0, M_R0, M_A0, CH0, N_A0, ND_A0, ACH0, ND_N0]
+    w0 = [N_R0, AP_Eb0, AP_Et0, AP_El0, AP_S0, AP_St0, ITMb0, ITM0, M_R0, M_A0, CH0, N_A0, ND_A0, ACH0, ND_N0, C_blood0, C0, TGF_beta0]
     return w0
