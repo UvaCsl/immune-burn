@@ -17,6 +17,19 @@ The objectives are to
 
 The project will advance scientific fundamental knowledge on inflammatory aspects of severe burns and the influence of Alkaline Phosphatase on this response. This will allow the development of new treatment strategies to improve health care and quality of life for severe burn wound patients and possibly other fibrotic pathologies, and optimal recovery of severe burn patients will reduce health care costs due to shorter hospital stay and reduced time out of work.
 
+
+## Set-up
+
+1. Clone this repository to your local
+```
+git clone git@github.com:UvaCsl/immune-burn.git
+```
+2. Create an environment named `immune` using the `requirements.txt` file
+
+```
+conda create --name <env> --file requirements.txt
+`
+
 ## Files Included
 
 There are 4 folders in the current repository:
