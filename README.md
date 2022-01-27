@@ -28,7 +28,7 @@ git clone git@github.com:UvaCsl/immune-burn.git
 
 ```
 conda create --name <env> --file requirements.txt
-`
+```
 
 ## Files Included
 
