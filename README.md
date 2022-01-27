@@ -1,8 +1,7 @@
 # Modeling Systemmic Inflammation in Severe Burn Patients
 This study is part of a bigger cause: ultimately assess the effect of Alkaline Phosphatase on Severe Burn Patients
 
-## Modelling and modulation of the inflammatory response in severe burns
-#### Mathematical modelling of the inflammatory response and the influence of Alkaline Phosphatase in severe burn patients
+## Introduction
 
 Severe burn injuries can be life-threatening and cause a severe systemic inflammatory response and associated complications. The first stage of treatment is mainly focussed on resuscitation and stabilisation of the patients into a stage where clinical condition is not life-threatening any longer. After the patient becomes stabilised, wound closure has to be achieved. Scar and psychological treatment are subsequent. This project focusses on the first stage of burn care, where patients are concerned with survival from systemic inflammation response and high risk for sepsis following burns. Until now, active pharmaceutical intervention possibilities for this stage in burns are limited. This project aims at studying a novel application of the clinical therapeutic compound (Alkaline Phosphatase). An in-silico study (computer simulation of the inflammatory response) will be performed aimed at optimising clinical care procedures that facilitate intensive care decision processes towards individual patient specific treatment (personalised treatment).
 
@@ -18,5 +17,14 @@ The objectives are to
 
 The project will advance scientific fundamental knowledge on inflammatory aspects of severe burns and the influence of Alkaline Phosphatase on this response. This will allow the development of new treatment strategies to improve health care and quality of life for severe burn wound patients and possibly other fibrotic pathologies, and optimal recovery of severe burn patients will reduce health care costs due to shorter hospital stay and reduced time out of work.
 
+## Files Included
+
+There are 4 folders in the current repository:
+1. `burn` : contains burn package, meaning the necessary codes to run the notebooks
+2. `data` :  contains data used for the simulations
+3. `notebooks` :  contains the notebooks to run the experiments 
+4. `results` :  contains results of the simulations
+
 ## Reference
-1. https://www.health-holland.com/project/2018/modelling-and-modulation-of-the-inflammatory-response-in-severe-burns
+1. [Modelling and modulation of the inflammatory response in severe burns
+](https://www.health-holland.com/project/2018/modelling-and-modulation-of-the-inflammatory-response-in-severe-burns)

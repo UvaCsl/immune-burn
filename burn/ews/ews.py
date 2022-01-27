@@ -82,18 +82,34 @@ def do_ar(dataset, lag=1):
 def do_ews_ar(dataset, time, win_size, lag=1):
     return dataset.rolling(int(win_size)).apply(do_ar)
 
-def do_mann_kendall(noise_name, to_test, ts_name):
+def do_mann_kendall(noise_name, to_test, ts_name, prnt=False):
+    """ Performs the Mann-Kendall trend test
+    
+    Returns:
+    trend: This tells the trend. Possible output includes increasing, decreasing, or no trend.
+    h: True if trend is present. False if no trend is present.
+    p: The p-value of the test.
+    z: The normalize test statistic.
+    Tau: Kendall Tau.
+    s: Mann-Kendal’s score
+    var_s: Variance S
+    slope: Theil-Sen estimator/slope
+    intercept: Intercept of Kendall-Theil Robust Line
+    """
+    
     ml_result = mk.original_test(to_test)
     
-    print (f'{noise_name} Mann Kendall Test Results: {ts_name}')
-    print ('-------------------------')
-    print(f'Trend : {ml_result.trend}')
-    print(f'h : {ml_result.h}')
-    print(f'p : {ml_result.p}')
-    print(f'Tau : {ml_result.Tau}')
-    print(f'Slope : {ml_result.slope}')
-    print(' ')
-    print(' ')
+    if prnt:
+        print (f'{noise_name} Mann Kendall Test Results: {ts_name}')
+        print ('-------------------------')
+        print(f'Trend : {ml_result.trend}')
+        print(f'h : {ml_result.h}')
+        print(f'p : {ml_result.p}')
+        print(f'Tau : {ml_result.Tau}')
+        print(f'Slope : {ml_result.slope}')
+        print(' ')
+        print(' ')
+    return ml_result
 
 def plot(data,
          immune,
